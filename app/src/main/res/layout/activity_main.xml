@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacer"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_main"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/spacer"/>
+
+    <Button
+        android:id="@+id/btn_main_page_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_page_1"
+        android:layout_below="@id/tv_main_title"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/space_main_btn_page"/>
+
+    <Button
+        android:id="@+id/btn_main_page_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_page_2"
+        android:layout_below="@id/tv_main_title"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/space_main_btn_page"/>
+
+    <Space
+        android:id="@+id/space_main_btn_page"
+        android:layout_width="@dimen/spacer"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_main_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_page_3"
+        android:layout_below="@id/btn_main_permission"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/spacer"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_main_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_question"
+        android:backgroundTint="@color/orange"
+        android:layout_below="@id/btn_main_page_1" />
+
+    <TextView
+        android:id="@+id/tv_main_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btn_main_question"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/btn_main_question"
+        android:layout_alignBottom="@id/btn_main_question"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/btn_main_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_alarme"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/red"
+        android:layout_below="@id/btn_main_question" />
+
+    <Button
+        android:id="@+id/btn_main_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_permission"
+        android:layout_below="@id/btn_main_alarm"
+        android:backgroundTint="@color/bleu"
+        />
+
+</RelativeLayout>

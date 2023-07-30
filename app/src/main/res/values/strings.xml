@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Demo04_intent</string>
+    <string name="title_main">DEMO 04 - Intent</string>
+    <string name="btn_page_1">Page 1</string>
+    <string name="btn_page_2">Page 2</string>
+    <string name="btn_page_3">Quitter</string>
+    <string name="title_page_one">Page One !!</string>
+    <string name="title_page_two">Page Two !!</string>
+    <string name="btn_question">Question?</string>
+    <string name="title_question">Votre couleur ?</string>
+    <string name="response_like">Vous aimez le %s</string>
+    <string name="response_unlike">Vous n\'avez rien aimé</string>
+    <string name="title_btn_green">Vert</string>
+    <string name="title_btn_purple">Mauve</string>
+    <string name="title_btn_blue">Bleu</string>
+    <string name="title_btn_none">None...</string>
+    <string name="btn_alarme">! Créer une alarme !</string>
+    <string name="intent_msg_alarm">Hello Bitch!</string>
+    <string name="btn_permission">Demande de permission</string>
+</resources>
